@@ -1,0 +1,142 @@
+*{
+    font-family: Verdana;
+    color: rgb(71, 71, 71);
+    font-size: small;
+}
+
+.cabecera {
+    background-color: rgb(60, 66, 95);
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.profile-picture {
+    max-height: 200px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.profile-picture {
+    /* Redondear la imagen y darle un tamaño maximo de 200px */
+    align-content: center;
+
+}
+
+
+.presentacion {
+    background-color: white;
+    margin: 2%;
+    color: rgb(92, 92, 92);
+    padding: 2%;
+    border-radius: 2em;
+    text-align: justify;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.datos-personales {
+    background: #d1d0d0;
+    padding: 1%;
+
+}
+
+
+
+
+.title {
+    font-weight: bold;
+}
+
+.contenido {
+    padding: 2em;
+}
+
+.date {
+    color: gray;
+    font-size: small;
+}
+
+h3 {
+    background-color: rgb(183, 176, 189);
+    padding: 2px;
+}
+
+.my-button {
+    padding: 10px 20px;
+    background-color: rgb(60, 66, 95);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.datos-linkedin {
+    grid-area: item1;
+    background-color: #bcf1c86c;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.datos-direccion {
+    grid-area: item2;
+    background-color: #dadada77;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.datos-cel {
+    grid-area: item3;
+    background-color: #dadada77;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.datos-mail {
+    grid-area: item4;
+    background-color: #dadada77;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.datos-nacimiento {
+    grid-area: item5;
+    background-color: #dadada77;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.datos-pais {
+    grid-area: item6;
+    align-items: center;
+    background-color: #dadada77;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "item1  item2"
+    "item1  item3"
+    "item1  item4"
+    "item1  item5"
+    "item1  item6";
+}
+
+#datos-personales-id {
+    background: none;
+}
+
+.datos-titutlo {
+    color: white;
+    background-color: #1b9681;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+}
