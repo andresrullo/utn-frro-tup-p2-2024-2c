@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica JavaScript - Parte 2</title>
+</head>
+<body>
+    <script>
+        //Ej 01 - Escribe un programa de una sola línea que haga que aparezca en la pantalla un alert que diga “Hello World”.
+        window.alert("Hello World!!");
+
+        //Ej 02 - Escribe un programa de una sola línea que escriba en la pantalla un texto que diga “Hello World” (document.write).
+        document.write("Hello World!!");
+
+        //Ej 03 - Escribe un programa de una sola línea que escriba en la pantalla el resultado de sumar 3 + 5.
+        var suma = 3+5;
+        document.write("<br> La suma entre 3 y 5 es: ",suma);
+
+        //Ej 04 - Escribe un programa de dos líneas que pida el nombre del usuario con un prompt y escriba un texto que diga “Hola nombreUsuario”
+        var name = prompt ("Ingrese su nombre", "Nombre");
+        document.write("<br> Hello " + name);
+
+        //Ej 05 - Escribe un programa de tres líneas que pida un número, pida otro número y escriba el resultado de sumar estos dos números.
+        var num1 = parseInt(prompt ("Ingrese el primer número", " "));
+        var num2 = parseInt(prompt ("Ingrese el segundo número", " "));
+        suma = num1+num2;
+        document.write("<br>La suma de los números ingresados es: ", suma);
+
+        //Ej 06 - Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor.
+        if (num1 > num2) {
+            document.write("<br>El número " , num1, " es mayor a ", num2);
+        num_mayor = num1
+        }
+            else {
+            document.write("<br>El número " , num2, " es mayor a ", num1);
+            num_mayor = num2
+        }
+        
+        //Ej 07 - Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres
+        var num3 = parseInt(prompt ("Ingrese un tercer número", " "));
+        if (num3 > num_mayor) {
+            document.write("<br>El número " , num3, " es el mayor de los tres ingresados");}
+            else {
+            document.write("<br>El número " , num_mayor, " es el mayor de los tres ingresados");}
+        
+        //Ej 08 - Escribe un programa que pida un número y diga si es divisible por 2
+        if (num2%2 == 0) {
+            document.write("<br>El número " , num2, " es divisible por 2");
+        } else {
+            document.write("<br>El número " , num2, " no es divisible por 2");
+        }
+
+        //Ej 09 - Escribe un programa que pida una frase y escriba cuantas veces aparece la letra A
+        var frase = prompt ("Ingrese una frase");
+        frase1 = frase.toLowerCase()
+        cont_a = 0
+        for (var i = 0; i < frase1.length; i++) {
+            if (frase[i]== "a") {
+                cont_a++;
+            }
+        }
+        document.write("<br>En la frase ",frase, " hay ", cont_a, " letras A");
+
+        //Ej 10 - Escribe un programa que pida una frase y escriba las vocales que aparecen
+        //Ej 11 - Escribe un programa que pida una frase y escriba cuántas de las letras que tiene son vocales
+        //Ej 12 - Escribe un programa que pida una frase y escriba cuántas veces aparecen cada una de las vocales
+        cont_e = 0
+        cont_i = 0
+        cont_u = 0
+        cont_o = 0
+        cont_total = 0
+        for (var i = 0; i < frase1.length; i++) {
+            if (frase[i]== "a") {
+                cont_a++;
+            }
+            if (frase[i]== "e") {
+                cont_e++;
+            }
+            if (frase[i]== "i") {
+                cont_i++;
+            }
+            if (frase[i]== "o") {
+                cont_o++;
+            }
+            if (frase[i]== "u") {
+                cont_u++;
+            }
+        }
+        cont_total = cont_a + cont_e + cont_i + cont_o + cont_u
+        document.write("<br>La frase tiene ", cont_a, " letras A");
+        document.write("<br>La frase tiene ", cont_e, " letras E");
+        document.write("<br>La frase tiene ", cont_i, " letras I");
+        document.write("<br>La frase tiene ", cont_o, " letras O");
+        document.write("<br>La frase tiene ", cont_u, " letras U");
+        document.write("<br>La frase tiene ", cont_total, " vocales");
+    </script>
+</body>
+</html>
